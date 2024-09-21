@@ -1,6 +1,7 @@
 name: releaser
 on:
   push:
+    branches: ["develop", "main", "releases/**"]
     tags:
       - 'v*'
       - 'with_quic'
