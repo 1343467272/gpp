@@ -20,7 +20,7 @@ jobs:
         with:
           go-version: '1.22'
       - name: Set up dependencies
-        run: sudo apt-get update && sudo apt-get install gcc musl-dev -y && sudo apt-get update git
+        run: sudo apt-get update && sudo apt-get install gcc musl-dev -y && sudo apt-get upgrade git
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v5
         with:
